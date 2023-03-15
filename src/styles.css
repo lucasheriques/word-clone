@@ -231,3 +231,45 @@ h1 {
     transform: translateY(0%);
   }
 }
+
+/* Stretch goal styles */
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.keyboard .row {
+  display: flex;
+  flex: 1;
+  gap: 8px;
+}
+
+.letter {
+  flex: 1;
+  background-color: var(--color-gray-900);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 8px 16px;
+}
+
+.letter.misplaced {
+  background: var(--color-warning);
+  border-color: var(--color-warning);
+  color: white;
+}
+
+.letter.incorrect {
+  background: var(--color-gray-300);
+  border-color: var(--color-gray-300);
+  color: white;
+}
+
+.letter.correct {
+  background: var(--color-success);
+  border-color: var(--color-success);
+  color: white;
+}
