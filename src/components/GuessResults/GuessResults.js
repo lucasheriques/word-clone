@@ -7,7 +7,6 @@ function GuessResults({ guesses, answer }) {
   return (
     <div className="guess-results">
       {range(NUM_OF_GUESSES_ALLOWED).map((i) => {
-        const currentGuess = guesses[i];
         return (
           <Guess
             key={i}
