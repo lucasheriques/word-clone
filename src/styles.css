@@ -31,13 +31,14 @@ body {
 }
 
 button {
-  margin: 0;
-  padding: 0;
+  margin: 8px 0 0;
+  padding: 8px;
   border: none;
-  background: transparent;
+  border-radius: 4px;
+  background: white;
   cursor: pointer;
   text-align: left;
-  color: inherit;
+  color: var(--color-gray-300);
 }
 
 .wrapper {
